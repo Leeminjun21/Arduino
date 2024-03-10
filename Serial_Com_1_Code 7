@@ -1,0 +1,20 @@
+#코드 7
+
+char value ;
+
+void setup(){
+  Serial.begin(9600);
+}
+
+void loop(){
+  if(Serial.available()>0){
+    value=Serial.read();
+    Serial.print("value:");
+    Serial.println(value);
+   }
+}     
+
+결과값
+value:a
+value:b
+value:c
